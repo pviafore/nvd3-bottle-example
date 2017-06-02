@@ -1,3 +1,4 @@
+from __future__ import print_function
 import json
 from bottle import run, get, static_file
 
@@ -44,5 +45,5 @@ def route_to_static_file(path):
     return static_file(path, root="static")
 
 # 0.0.0.0 binds on public and localhost
-print "Go to http://localhost:8181"
+print("Go to http://localhost:8181")
 run(host="0.0.0.0", port=8181, debug=True)
