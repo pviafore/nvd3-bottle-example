@@ -1,5 +1,5 @@
 # nvd3-bottle-example
-An example of NVd3 data viz with Flask as a back end
+An example of NVd3 data viz with Bottle as a back end
 
 # To Run
 
