@@ -34,10 +34,6 @@ def get_data():
     ]
     return sorted(data, key=lambda i: i["x"])
 
-@get("/test-hello")
-def return_html():
-    return "<h3 color='red'>HELLO THIS IS REAL</h3>"
-
 @get("/data")
 def return_data():
     """ Return a dictionary that NVD3 will understand """

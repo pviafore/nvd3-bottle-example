@@ -12,7 +12,7 @@ function drawGraph(data) {
             .showLegend(true) //Show the legend, allowing users to turn on/off line series.
             .showYAxis(true) //Show the y-axis
             .showXAxis(true) //Show the x-axis
-            .x((d) => d.x + 10) //Grab x values out of the object
+            .x((d) => d.x) //Grab x values out of the object
             .y((d) => d.y) //Grab y values out of hte object
 
         chart.xAxis.axisLabel('Time in Seconds')
@@ -22,9 +22,4 @@ function drawGraph(data) {
             .datum([data]) //Populate the graph (I put it in an array because nvd3 expects it because you can have multiple lines)
             .call(chart); //Finally, render the chart!
     });
-
-
-
-
-
 }
